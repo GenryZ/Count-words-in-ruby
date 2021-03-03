@@ -13,7 +13,7 @@ def add_to_hash word
 end
 
 f.each_line do |line|
-  arr = line.split(/\s|\n|,/) #\s whitespace | or 
+  arr = line.split(/\s|\n|\.|,/) #\s whitespace | or 
   arr.each {|word| add_to_hash(word)}
 end
 
